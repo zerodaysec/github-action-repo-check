@@ -2,7 +2,7 @@
 
 import os
 import sys
-import yaml
+# import yaml
 
 # Define default values for command line arguments
 default_files = []
@@ -16,13 +16,13 @@ else:
     files = default_files
     actions = default_actions
 
-# Get input parameters from local configuration file, if it exists
-config_file = os.path.join('.github', 'repo_audit_config.yml')
-if os.path.isfile(config_file):
-    with open(config_file, 'r', encoding="utf-8") as f:
-        config = yaml.safe_load(f)
-        files += config.get('files', [])
-        actions += config.get('actions', [])
+# # Get input parameters from local configuration file, if it exists
+# config_file = os.path.join('.github', 'repo_audit_config.yml')
+# if os.path.isfile(config_file):
+#     with open(config_file, 'r', encoding="utf-8") as f:
+#         config = yaml.safe_load(f)
+#         files += config.get('files', [])
+#         actions += config.get('actions', [])
 
 # Check if requested files exist in the local directory
 for file in files:

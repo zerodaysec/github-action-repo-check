@@ -27,7 +27,7 @@ To use the `Repository Audit` action with default settings, add the following st
 ```
 
 This will run the `Repository Audit` action with the default `files` and `actions` settings. The action will check if the specified files and actions exist in the repository and output the result to the workflow log.
-
+<!-- 
 ## Configuration Overrides
 
 You can override the default `files` and `actions` settings by either creating a `.github/repo_audit_config.yml` file in your repository or by passing in command line arguments to the action.
@@ -46,7 +46,7 @@ actions:
   - help-wanted.yml
 ```
 
-This will supplement the default `files` and `actions` settings with the files and actions listed in the configuration file.
+This will supplement the default `files` and `actions` settings with the files and actions listed in the configuration file. -->
 
 ### Using Command Line Arguments
 
