@@ -1,3 +1,5 @@
+"""audit_repo.py"""
+
 import os
 import sys
 import yaml
@@ -17,7 +19,7 @@ else:
 # Get input parameters from local configuration file, if it exists
 config_file = os.path.join('.github', 'repo_audit_config.yml')
 if os.path.isfile(config_file):
-    with open(config_file, 'r') as f:
+    with open(config_file, 'r', encoding="utf-8") as f:
         config = yaml.safe_load(f)
         files += config.get('files', [])
         actions += config.get('actions', [])
