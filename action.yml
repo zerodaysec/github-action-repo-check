@@ -1,0 +1,20 @@
+name: Audit Repository
+description: "Audit a GitHub repository for expected files and GitHub workflows."
+inputs:
+  files:
+    description: "A list of files to check for in the repository."
+    required: true
+  actions:
+    description: "A list of expected GitHub actions in the repository."
+    required: true
+outputs:
+  result:
+    description: "The audit result."
+runs:
+  using: "docker"
+  image: "python:3.9"
+  args:
+    - "/bin/bash"
+    - "-c"
+    - |
+      python /audit_repo.py ${{ inputs.files }} ${{ inputs.actions }}
