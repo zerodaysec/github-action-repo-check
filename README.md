@@ -1,6 +1,14 @@
 # GitHub Action: Repository Audit
 
-This action audits a GitHub repository for the existence of specified files and actions.
+Organizations often struggle with ensuring that their repositories are compliant and standardized. This can lead to
+issues such as inconsistent code quality, security vulnerabilities, and failed compliance audits. In addition, different
+teams may have different opinions on what constitutes best practices, making it difficult to enforce a consistent standard
+across the organization.
+
+The Audit Repository GitHub action can help organizations address this challenge by providing a simple and automated way
+to check for the existence of specified files and actions in a repository. By using this action, teams can ensure that
+repositories meet a minimum set of requirements and are compliant with organizational standards. This can lead to
+improved code quality, reduced security risks, and increased compliance with regulatory requirements.
 
 ## Purpose
 
