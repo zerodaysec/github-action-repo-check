@@ -1,5 +1,7 @@
 # GitHub Action: Repository Audit
 
+***THIS IS NOT YET WORKING PLEASE DONT CLONE, TRY, FAIL, AND THEN OPEN AN ISSUE.***
+
 Organizations often struggle with ensuring that their repositories are compliant and standardized. This can lead to
 issues such as inconsistent code quality, security vulnerabilities, and failed compliance audits. In addition, different
 teams may have different opinions on what constitutes best practices, making it difficult to enforce a consistent standard
