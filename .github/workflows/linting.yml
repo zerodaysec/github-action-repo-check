@@ -1,0 +1,21 @@
+name: Linting
+
+on:
+  push:
+  pull_request:
+  # branches:
+  #   - main
+  #   - prod
+  #   - ENV-prod
+  #   - "*"
+
+jobs:
+  linting:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: GitHub Action for pylint
+        uses: cclauss/GitHub-Action-for-pylint@master
+        with:
+          args: pylint .
